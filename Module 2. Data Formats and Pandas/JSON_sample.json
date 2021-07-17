@@ -1,0 +1,34 @@
+{
+  "Employees": [
+    {
+      "userId": "person1",
+      "jobTitle": "Developer",
+      "firstName": "Harry",
+      "lastName": "Berg",
+      "employeeCode": "E1",
+      "region": "CA",
+      "phoneNumber": "123456",
+      "emailAddress": "harry.berg@aicore.com"
+    },
+    {
+      "userId": "person2",
+      "jobTitle": "Developer",
+      "firstName": "Nihir",
+      "lastName": "Vedd",
+      "employeeCode": "E2",
+      "region": "CA",
+      "phoneNumber": "1111111",
+      "emailAddress": "nihir.vedd@aicore.com"
+    },
+    {
+      "userId": "person3",
+      "jobTitle": "Program Directory",
+      "firstName": "Joao",
+      "lastName": "Pereira",
+      "employeeCode": "E3",
+      "region": "CA",
+      "phoneNumber": "2222222",
+      "emailAddress": "joao.pereira@aicore.com"
+    }
+  ]
+}
