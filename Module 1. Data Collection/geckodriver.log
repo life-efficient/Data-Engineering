@@ -1,0 +1,54 @@
+1628795926006	geckodriver	INFO	Listening on 127.0.0.1:58133
+1628795927007	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecOV9X5"
+1628795927665	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 24797
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1628796193046	geckodriver	INFO	Listening on 127.0.0.1:35703
+1628796193051	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekVea4m"
+1628796193606	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 25547
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1628796300841	geckodriver	INFO	Listening on 127.0.0.1:55859
+1628796301846	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHJ8tz3"
+1628796302513	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 25759
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1628796308363	geckodriver	INFO	Listening on 127.0.0.1:47093
+1628796309367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileILuisG"
+1628796309986	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+25887
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1628796410681	geckodriver	INFO	Listening on 127.0.0.1:32901
+1628796411684	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileT5dVG9"
+1628796412294	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+26068
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1628796505806	geckodriver	INFO	Listening on 127.0.0.1:46191
+1628796506809	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1OPUuq"
+1628796507355	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 26264
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1628796586311	geckodriver	INFO	Listening on 127.0.0.1:47683
+1628796587316	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileweuSBg"
+1628796587964	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 26455ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1628796667520	geckodriver	INFO	Listening on 127.0.0.1:42311
+1628796668542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCnwjWR"
+1628796669259	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+26630
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1628797048818	geckodriver	INFO	Listening on 127.0.0.1:58547
+1628797049822	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezE7OzX"
+1628797050385	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 28662
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
