@@ -40,7 +40,7 @@ with DAG(dag_id='test_python',
          tags=['test']
          ) as dag:
 
-    def get_today_events(url: str, file_dir: str):
+    def get_today_events(ti, url: str, file_dir: str):
         ul_soup = get_ul(url)
         for li in ul_soup.find_all('li'):
             write_file(li.text, file_dir)
@@ -50,3 +50,4 @@ with DAG(dag_id='test_python',
         python_callable=get_today_events,
         op_kwargs={'url': 'https://en.wikipedia.org/wiki/Wikipedia:On_this_day/Today', 
                    'file_dir': desktop_dir})
+    

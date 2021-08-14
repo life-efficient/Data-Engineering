@@ -29,19 +29,19 @@ with DAG(dag_id='test_dag_dependencies',
     # Define the tasks. Here we are going to define only one bash operator
     date_task = BashOperator(
         task_id='write_date',
-        bash_command='cd ~/Desktop/Weather_Airflow && date >> date.txt',
+        bash_command='cd ~/Desktop/GitHub/Weather_Airflow && date >> date.txt',
         dag=dag)
     add_task = BashOperator(
         task_id='add_files',
-        bash_command='cd ~/Desktop/Weather_Airflow && git add .',
+        bash_command='cd ~/Desktop/GitHub/Weather_Airflow && git add .',
         dag=dag)
     commit_task = BashOperator(
         task_id='commit_files',
-        bash_command='cd ~/Desktop/Weather_Airflow && git commit -m "Update date"',
+        bash_command='cd ~/Desktop/GitHub/Weather_Airflow && git commit -m "Update date"',
         dag=dag)
     push_task = BashOperator(
         task_id='push_files',
-        bash_command='cd ~/Desktop/Weather_Airflow && git push',
+        bash_command='cd ~/Desktop/GitHub/Weather_Airflow && git push',
         dag=dag)
     
     date_task >> add_task >> commit_task
