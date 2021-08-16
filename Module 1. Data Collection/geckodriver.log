@@ -52,3 +52,27 @@ ExceptionHandler::SendContinueSignalToChild sent continue signal to child
 ExceptionHandler::GenerateDump cloned child 28662
 ExceptionHandler::SendContinueSignalToChild sent continue signal to child
 ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1629132614741	geckodriver	INFO	Listening on 127.0.0.1:58199
+1629132615745	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile51ZiND"
+1629132616314	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 33066
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1629132883572	geckodriver	INFO	Listening on 127.0.0.1:48199
+1629132883576	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVQ5S0Y"
+1629132884124	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 33281
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1629134371351	geckodriver	INFO	Listening on 127.0.0.1:37097
+1629134372357	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNevlAU"
+1629134372952	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child 34415
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1629134694779	geckodriver	INFO	Listening on 127.0.0.1:52869
+1629134695785	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei6FBOw"
+1629134696345	Marionette	INFO	Marionette enabled
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+34665
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
