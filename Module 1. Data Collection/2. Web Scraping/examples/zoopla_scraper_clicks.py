@@ -9,7 +9,7 @@ import time
 
 
 house_characteristics = {'Price': [], 'Bedrooms': [], 'Address': []}
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome()
 for page_number in range(2, 5):
     URL = f"https://www.zoopla.co.uk/new-homes/property/london/?q=London&results_sort=newest_listings&search_source=new-homes&page_size=10&pn=1&view_type=list&pn={page_number}"
     driver.get(URL)

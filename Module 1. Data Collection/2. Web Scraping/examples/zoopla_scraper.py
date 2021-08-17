@@ -26,7 +26,7 @@ def house_listing():
         time.sleep(1)
 
 URL = "https://www.zoopla.co.uk/new-homes/property/london/?q=London&results_sort=newest_listings&search_source=new-homes&page_size=10&pn=1&view_type=list"
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome()
 driver.get(URL)
 cookies_button = driver.find_element_by_xpath('//*[@id="cookie-consent-form"]/div/div/div/button[2]')
 cookies_button.click()
