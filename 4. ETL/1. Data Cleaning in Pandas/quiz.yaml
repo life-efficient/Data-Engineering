@@ -1,0 +1,289 @@
+name: 1.3.0 Pandas
+questions:
+  - options:
+      - correct: false
+        option: import pandas
+      - correct: true
+        option: import pandas as pd
+      - correct: false
+        option: import pandas as ps
+      - correct: false
+        option: from pandas import \*
+      - correct: false
+        option: from pandas import necessary, objects, here
+    question: What is the canonical way for importing the pandas library?
+  - options:
+      - correct: false
+        option: open\_{type}("filepath"), save\_{type}("filepath")
+      - correct: false
+        option: read\_{type}("filepath"), write\_{type}("filepath"),
+      - correct: false
+        option: from\_{type}("filepath"), save\_{type}("filepath")
+      - correct: true
+        option: from\_{type}("filepath"), to\_{type}("filepath")
+      - correct: true
+        option: read\_{type}("filepath"), to\_{type}("filepath")
+    question: What is the general syntax for DataFrame creation (from files or Python
+      objects) and saving to file?
+  - options:
+      - correct: false
+        option: df["time"]
+      - correct: false
+        option: df.columns["time"]
+      - correct: false
+        option: df.time
+      - correct: true
+        option: df[["time"]]
+      - correct: false
+        option: df.loc["time"]
+    question: Assume we have pandas DataFrame object named "df". How would you choose
+      single column named "time" in order to obtain DataFrame as a result?
+  - options:
+      - correct: false
+        option: df[0]
+      - correct: false
+        option: df.iloc[0]
+      - correct: true
+        option: df.loc[[0]]
+      - correct: false
+        option: df.loc[0]
+      - correct: false
+        option: df[[0]]
+      - correct: true
+        option: df.iloc[[0]]
+      - correct: false
+        option: df.loc[:, [0]]
+      - correct: true
+        option: df
+      - correct: true
+        option: df.head()
+      - correct: false
+        option: df.head(0)
+      - correct: true
+        option: df.tail()
+      - correct: true
+        option: df.tail(1)
+    question: We have DataFrame "df" containing single row. How could we access 0-th
+      row in order to obtain it as DataFrame?
+  - options:
+      - correct: true
+        option: df[["A", "B", "C"]]
+      - correct: false
+        option: df["A", "B", "C"]
+      - correct: true
+        option: df.loc[:, :"C"]
+      - correct: false
+        option: df.loc[:"C"]
+      - correct: false
+        option: df.iloc[:, :"C"]
+      - correct: true
+        option: df.iloc[:, :3]
+      - correct: false
+        option: df.iloc[:, []]
+      - correct: false
+        option: df.iloc[:, list(range(len(df.columns)))]
+      - correct: true
+        option: df.iloc[:, list(range(len(df.columns)))[:-1]]
+      - correct: true
+        option: df.loc[:, ["A", "B", "C"]]
+    question: 'We would like to get three columns named "A", "B" and "C". In total
+      there are four columns ["A", "B", "C", "D"] given in that order.
+
+
+      It doesn''t matter how we get them (as list, as pandas.Series, as pandas.DataFrame),
+      as items, everything is fine, we only care about the data from those columns.
+      Dataframe, as per usual, named "df":'
+  - options:
+      - correct: false
+        option: df.drop("A", inplace=True)
+      - correct: true
+        option: df.drop("A", axis=1, inplace=True)
+      - correct: false
+        option: df.drop("A", axis=0, inplace=True)
+      - correct: true
+        option: df.A = df.drop("A", axis="columns")
+      - correct: false
+        option: df.drop("A", axis="columns")
+      - correct: false
+        option: df.drop("A", axis=0)
+      - correct: false
+        option: df = df.drop("A")
+    question: How can we drop column "A" from DataFrame "df" so our changes are visible
+      in original dataframe?
+  - options:
+      - correct: true
+        option: df.tail(1)
+      - correct: false
+        option: df.head(-1)
+      - correct: false
+        option: df.head()
+      - correct: false
+        option: df.tail()
+      - correct: false
+        option: df.end()
+      - correct: false
+        option: df.end(1)
+    question: How to get ONE last row from our df dataframe?
+  - options:
+      - correct: false
+        option: df[df > 5]
+      - correct: true
+        option: df[~(df["A"] <= 5)]
+      - correct: true
+        option: df[df["A"] > 5]
+      - correct: true
+        option: df[df.A > 5]
+      - correct: false
+        option: df.greater("A", 5)
+    question: 'We have three columns in our dataframe df, A, B, C. A has numerical
+      data in it. What condition should we use to return rows where values of A are
+      greater than 5?
+
+      '
+  - options:
+      - correct: false
+        option: df.numpy()
+      - correct: true
+        option: df.values
+      - correct: true
+        option: df.to\_numpy()
+      - correct: false
+        option: df.to\_matrix()
+      - correct: true
+        option: df.as\_matrix()
+    question: So we have a DataFrame df with numerical data only. How to get `numpy`
+      matrix from it?
+  - options:
+      - correct: false
+        option: df.D = df.sum(axis=1)
+      - correct: false
+        option: df["D"] = df.sum(axis=0)
+      - correct: false
+        option: 'df["D"] = df.apply(lambda row: row.sum())'
+      - correct: true
+        option: 'df["D"] = df.apply(lambda row: row.A + row.B + row.C, axis=1)'
+      - correct: true
+        option: 'df["D"] = df.apply(lambda row: row.sum(), axis=1)'
+    question: 'Pandas `apply` function for `pd.Series` works across elements contained
+      within it.
+
+
+      When we apply it on `pd.DataFrame` with multiple columns, the function gets
+      a single row (see also `axis` parameter).
+
+
+      Given we have columns A, B, C (all concatenation) we would like to create a
+      a new column D which fulfills the equation C + A + B. How can we do this?'
+  - options:
+      - correct: false
+        option: df.fillna("mean")
+      - correct: false
+        option: df.fillna(df.mean(axis=1))
+      - correct: false
+        option: df.fillna(df.mean())
+      - correct: true
+        option: df.fillna(df.mean(), inplace=True)
+      - correct: false
+        option: df.fillnan(df.mean())
+    question: We have multiple columns containing NaNs. What would be the way to fill
+      those with mean value of each column so the original dataframe is modified?
+  - options:
+      - correct: true
+        option: pd.isnull(df)
+      - correct: true
+        option: df.isna()
+      - correct: false
+        option: df.isna(pd.NA)
+      - correct: true
+        option: df.isnull()
+      - correct: false
+        option: df.isnull(pd.NA)
+    question: How to get boolean array/matrix to detect where the NaNs are located?
+  - options:
+      - correct: true
+        option: series.value\_counts()
+      - correct: false
+        option: series.nunique()
+      - correct: false
+        option: series.count()
+      - correct: false
+        option: series.unique()
+    question: Having pd.Series object named "series", how can we obtain unique values
+      and their count as another Series?
+  - options:
+      - correct: true
+        option: column
+      - correct: false
+        option: row
+    question: 'Which can be appended faster to an existing pd.DataFrame object:'
+  - options:
+      - correct: false
+        option: df.group("A").mean().groupby("B")
+      - correct: false
+        option: 'df.groupby("A", "B").apply(lambda value, row: value / len(row))'
+      - correct: false
+        option: df.group(["A", "B"]).mean()
+      - correct: true
+        option: df.groupby(["A", "B"]).mean()
+    question: How to group DataFrame df containing columns A, B, C, D by values contained
+      in columns A and B and take the mean of those groups?
+  - options:
+      - correct: true
+        option: Aggregate using one or more operations over the specified axis.
+      - correct: false
+        option: Display aggregated statistics over specified axis
+      - correct: false
+        option: Used on pd.DataFrame
+      - correct: false
+        option: Used on pd.Series and groupby object
+      - correct: true
+        option: Available for all core objects (DataFrame, Series, Group object)
+    question: What does aggregate do and where can it be applied on?
+  - options:
+      - correct: false
+        option: 'for group in grouped: ...'
+      - correct: false
+        option: 'for group in grouped.iteritems():'
+      - correct: true
+        option: 'for \_, group in grouped:'
+      - correct: false
+        option: 'while grouped:'
+    question: 'Let''s say we have grouped pandas dataframe like this: grouped = df.groupby("A").
+      How can we itereate over this group?'
+  - options:
+      - correct: true
+        option: Inner joins on shared keys
+      - correct: true
+        option: Outer joins on all keys
+      - correct: false
+        option: Inner joins on all keys
+      - correct: false
+        option: Outer joins only on shared keys
+    question: What is the difference between an inner & outer join?
+  - options:
+      - correct: true
+        option: df.C = df.A + df.B
+      - correct: false
+        option: df["C"] = df[["A", "B"]].str.concat()
+      - correct: true
+        option: df["C"] = df.A.str.cat(df.B)
+      - correct: true
+        option: 'df[''C''] = df[[''A'', ''B'']].apply(lambda x : f''{x[0]}{x[1]}'',
+          axis=1)'
+      - correct: false
+        option: df["C"] = pd.cat(df.A, df.B)
+    question: How to concatenate two string columns A and B in DataFrame df and put
+      the result in column C?
+  - options:
+      - correct: false
+        option: df.plot.histogram()
+      - correct: true
+        option: df.plot.hist()
+      - correct: false
+        option: df.hist()
+      - correct: false
+        option: df.histogram()
+      - correct: false
+        option: df.plot\_hist()
+    question: How to plot histogram of all column in pandas dataframe (named df) so
+      it is shown as a single plot?
