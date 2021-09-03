@@ -2,4 +2,5 @@
 2. Check Security Groups [here](https://aws.amazon.com/security-groups/)
 3. Read the notebook and follow the instructions
 4. Check the [boto3](https://boto3.readthedocs.io/en/latest/) documentation
-5. Attemt the quiz when you feel ready! 
+5. Complete the Cat Scraper practical
+6. Attempt the quiz when you feel ready! 
