@@ -4,5 +4,6 @@
 4. Read about the [__Top Kafka Use Cases in Industry__](https://videos.confluent.io/watch/5AA8GugNNDgdSs8acTHQFB?)
 5. Review the material on [__What is Zookeeper__](https://dattell.com/data-architecture-blog/what-is-zookeeper-how-does-it-support-kafka/)
 6. Download Apache Kafka for Linux and expore the files
-7. Complete the challenges of this lesson
-8. Take the Quiz!
+7. Do the Advanced hands-on excercise
+8. Complete the challenges of this lesson
+9. Take the Quiz!
