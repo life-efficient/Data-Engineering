@@ -1,4 +1,4 @@
-1. Go to the AWS <a href="https://aws.amazon.com/"> <span style="color:orange"> website </span></a> 
+1. Go to the AWS [website](https://aws.amazon.com/)
 2. Check Security Groups [here](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
 3. Read the notebook and follow the instructions
 4. Check the [boto3](https://boto3.readthedocs.io/en/latest/) documentation
